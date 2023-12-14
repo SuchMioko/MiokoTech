@@ -90,7 +90,7 @@ var myMeta = document.querySelector("meta[property=\"og:url\"]");
 var mContent = myMeta.getAttribute("content");
 var splitmContent = mContent.split("://")[1].split("/")[0];
 var contentFnsh = splitmContent.replace(/\./g, "_");
-if ("translate" === key) {
+if (key) {
   function handleLangGetClick(sahaan) {
     var ezlyn = document.querySelectorAll(".langGet");
     var silviano = ezlyn[0].getAttribute("lang-id");
